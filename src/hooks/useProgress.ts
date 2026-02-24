@@ -58,18 +58,6 @@ export function useProgress() {
 
   const getModuleStatus = useCallback(
     (moduleId: number): ModuleStatus => {
-      // Module 1 is always available
-      if (moduleId === 1) {
-        const percent = getModulePercent(1);
-        if (percent === 100) return "completed";
-        if (percent > 0) return "in-progress";
-        return "available";
-      }
-
-      // Check if previous module is completed (sequential unlock)
-      const prevPercent = getModulePercent(moduleId - 1);
-      if (prevPercent < 100) return "locked";
-
       const percent = getModulePercent(moduleId);
       if (percent === 100) return "completed";
       if (percent > 0) return "in-progress";
