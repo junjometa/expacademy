@@ -12,7 +12,6 @@ import { useStreak } from "@/hooks/useStreak";
 import AppShell from "@/components/layout/AppShell";
 import BlockRenderer from "@/components/lessons/BlockRenderer";
 import ConfettiEffect from "@/components/dashboard/ConfettiEffect";
-import ScrollProgress from "@/components/effects/ScrollProgress";
 
 const XP_PER_LESSON = 50;
 
@@ -73,7 +72,6 @@ export default function LessonPage() {
 
   return (
     <AppShell>
-      <ScrollProgress />
       <ConfettiEffect active={showConfetti} />
 
       {/* Back nav */}

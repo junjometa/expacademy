@@ -33,7 +33,6 @@ const config: Config = {
         heading: ["var(--font-heading)", "sans-serif"],
         body: ["var(--font-body)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
-        accent: ["var(--font-accent)", "Georgia", "serif"],
       },
       animation: {
         "fade-in": "fade-in 0.5s ease-out forwards",

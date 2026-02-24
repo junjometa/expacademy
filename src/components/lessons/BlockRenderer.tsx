@@ -209,13 +209,13 @@ function ConnectionBlock({ block }: { block: ContentBlock }) {
 
 function QuoteBlock({ block }: { block: ContentBlock }) {
   return (
-    <div className="relative py-6 px-8">
-      <Quote size={40} className="absolute top-2 left-0 text-accent-primary/15" />
-      <p className="font-accent italic text-text-primary text-xl lg:text-2xl leading-[1.6] pl-4">
+    <div className="relative py-4 px-6">
+      <Quote size={32} className="absolute top-0 left-0 text-accent-primary/20" />
+      <p className="italic text-text-secondary pl-4 text-sm leading-[1.75]">
         {block.text}
       </p>
       {block.author && (
-        <p className="mt-3 text-sm text-accent-primary font-medium pl-4 font-body">
+        <p className="mt-2 text-xs text-accent-primary font-medium pl-4">
           — {block.author}
         </p>
       )}
